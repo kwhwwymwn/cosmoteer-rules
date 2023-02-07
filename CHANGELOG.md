@@ -7,3 +7,15 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [Unreleased]
 
 - Initial release
+
+## [0.0.1]
+
+### Added
+
+- angle brackets to the pairs lists (they are used in pair for paths, and nowhere else)
+
+### Changed
+
+- keywords (removed unused keywords, added relevant keywords, modified regex for better matches)
+
+## [0.0.2]

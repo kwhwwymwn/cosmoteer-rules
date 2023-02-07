@@ -8,32 +8,34 @@
 		{
 			"include": "#strings"
 		},
-    {
-      "include": "#comment"
-    }
+		{
+			"include": "#comment"
+		}
 	],
 	"repository": {
 		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.cosmoteer-rules",
-				"match": "\\b(if|while|for|return)\\b"
-			},
-      {
-        "name": "support.class",
-        "match": "(^\\w+\\b)(?! =)|(?<=: )\\w+\\b|(\\w+\\b)(?= :)"
-      },
-      {
-        "name": "support.variable",
-        "match": "\\w+(?=\\s*=)"
-      },
-      {
-        "name": "constant.numeric",
-        "match": "\\b\\d+"
-      },
-      {
-        "name": "entity.name.function",
-        "match": "&\\w+\\b"
-      }]
+			"patterns": [
+				{
+					"name": "keyword.control.cosmoteer-rules",
+					"match": "\\b(Overrides|OverrideIn|Replace|With|Add|AddMany|AddBase|ToAdd|ManyToAdd|BaseToAdd|AddTo|AddBaseTo|Remove|RemoveMany|Multiply|Divide|Max|Min)\\b"
+				},
+				{
+					"name": "keyword.operator",
+					"match": "\\b(and|or|deg|\\+|-|=|,|;|\\*|/)\\b"
+				},
+				{
+					"name": "keyword.other",
+					"match": "\\b(Action|CreateIfNotExisting|IgnoreIfNotExisting|OnlyIfNotExisting)\\b"
+				},
+				{
+					"name": "constant.language",
+					"match": "\\b(true|false|all|none|Up|Down|Left|Right|Top|Bottom|TopLeft|TopRight|BottomLeft|BottomRight|Rot)\\b"
+				},
+				{
+					"name": "constant.numeric",
+					"match": "-?\\d*\\.?\\d+[d|%]?"
+				}
+			]
 		},
 		"strings": {
 			"name": "string.quoted.double.cosmoteer-rules",
@@ -46,13 +48,20 @@
 				}
 			]
 		},
-    "comment": {
-      "patterns": [{
-        "name": "comment.line.double-slash",
-        "begin": "//",
-        "end": "$"
-      }]
-    }
+		"comment": {
+			"patterns": [
+				{
+					"name": "comment.line.double-slash",
+					"begin": "//",
+					"end": "$"
+				},
+				{
+					"name": "comment.block",
+					"begin": "/*",
+					"end": "*/"
+				}
+			]
+		}
 	},
 	"scopeName": "source.rules"
 }

@@ -1,31 +1,51 @@
 {
-  "name": "cosmoteer-rules",
-  "publisher": "Ataxica",
-  "icon": "icon.png",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/SaViGnAnO/cosmoteer-rules.git"
-  },
-  "displayName": "Cosmoteer-Rules",
-  "description": "Language support for the Cosmoteer .rules file.",
-  "version": "0.0.2",
-  "engines": {
-    "vscode": "^1.6.0"
-  },
-  "categories": [
-    "Programming Languages"
-  ],
-  "contributes": {
-    "languages": [{
-      "id": "cosmoteer-rules",
-      "aliases": ["Cosmoteer Rules", "cosmoteer-rules"],
-      "extensions": [".rules"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "cosmoteer-rules",
-      "scopeName": "source.rules",
-      "path": "./syntaxes/cosmoteer-rules.tmLanguage.json"
-    }]
-  }
+	"name": "cosmoteer-rules",
+	"publisher": "Ataxica",
+	"icon": "icon.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/SaViGnAnO/cosmoteer-rules.git"
+	},
+	"displayName": "Cosmoteer-Rules",
+	"description": "Language support for the Cosmoteer .rules file.",
+	"version": "0.0.2",
+	"engines": {
+		"vscode": "^1.72.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "cosmoteer-rules",
+				"aliases": [
+					"Cosmoteer Rules",
+					"cosmoteer-rules"
+				],
+				"extensions": [
+					".rules"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "cosmoteer-rules",
+				"scopeName": "source.rules",
+				"path": "./syntaxes/cosmoteer-rules.tmLanguage.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "6034c696-854d-4a75-83ea-0bc3992046b4",
+		"publisherId": "71ffb3fd-6cdf-4135-b626-2fcca2d76ca2",
+		"publisherDisplayName": "Ataxica",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1675678335716,
+		"preRelease": false
+	}
 }
