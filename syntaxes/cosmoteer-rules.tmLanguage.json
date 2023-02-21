@@ -37,7 +37,7 @@
 				},
 				{
 					"name":"entity.name.function",
-					"match": "\\b&[\\w\\.\\^\\d/~<>]+\\b"
+					"match": "&[\\w\\.\\^\\d/~<>]+\\b"
 				}
 			]
 		},
