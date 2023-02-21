@@ -33,7 +33,11 @@
 				},
 				{
 					"name": "constant.numeric",
-					"match": "-?\\d*\\.?\\d+[d|%]?"
+					"match": "\\b-?\\d*\\.?\\d+[d|%]?\\b"
+				},
+				{
+					"name":"entity.name.function",
+					"match": "\\b&[\\w\\.\\^\\d/~<>]+\\b"
 				}
 			]
 		},

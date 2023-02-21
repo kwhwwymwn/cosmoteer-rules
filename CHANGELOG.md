@@ -19,3 +19,12 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - keywords (removed unused keywords, added relevant keywords, modified regex for better matches)
 
 ## [0.0.2]
+
+### Changed
+
+- fixed issue with number inside a name being displayed as a numeric constant
+- keywords
+
+### Removed
+
+- angle brackets from the pairs lists (they are also used for logic stuff)
